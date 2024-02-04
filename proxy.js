@@ -9,7 +9,7 @@ let proxyDestination = process.env.PROXY_DESTINATION;
 const credentials = (process.env.PROXY_CREDENTIALS || false) == "true";
 const origin = process.env.PROXY_ORIGIN || '*';
 const port = process.env.PORT || 8222;
-const proxyPartial = process.env.PROXY_PATH || 'proxy';
+const proxyPartial = '';
 const showHome = (process.env.PROXY_SHOWHOME || false) == "true";
 const showConfiguration = (process.env.PROXY_SHOWCONFIGURATION || false) == "true";
 
