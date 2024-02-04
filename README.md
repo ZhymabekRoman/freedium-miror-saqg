@@ -1,6 +1,7 @@
 # VERCEL CORS PROXY
 
-Proxy to bypass CORS issues working in VERCEL environment.  
+Proxy to bypass CORS issues working in VERCEL environment.
+
 This project is a fork from [Local Cors Proxy](https://github.com/garmeeh/local-cors-proxy) created by Gary Meehan.  
 was built as a local dev only solution to enable prototyping against existing APIs without having to worry about CORS.
 
