@@ -21,6 +21,13 @@ proxy.use(express.static(path.join(__dirname, 'public')));
 proxy.use(cors({ credentials: credentials, origin: origin }));
 proxy.options('*', cors({ credentials: credentials, origin: origin }));
 
+// Middleware to add cache control headers
+proxy.use((req, res, next) => {
+  // Example: Cache for 10 minutes
+  res.set('Cache-Control', 'public, max-age=600');
+  next();
+});
+
 // remove trailing slash
 var cleanproxyDestination = proxyDestination.replace(/\/$/, '');
 // remove all forward slashes
